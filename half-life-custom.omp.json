@@ -1,0 +1,98 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "session",
+          "style": "plain",
+          "foreground": "#ae81ff",
+          "properties": {
+            "prefix": "",
+            "template": "{{ .UserName }}"
+          }
+        },
+        {
+          "type": "text",
+          "style": "plain",
+          "foreground": "#ffffff",
+          "properties": {
+            "prefix": "",
+            "text": "in"
+          }
+        },
+        {
+          "type": "path",
+          "style": "powerline",
+          "foreground": "#87FF00",
+          "properties": {
+            "home_icon": ".",
+            "style": "full",
+            "prefix": "",
+            "mapped_locations": {
+              "C:\\Users\\shedy\\Documents": "."
+            }
+          }
+        },
+        {
+          "type": "git",
+          "style": "plain",
+          "foreground": "#5FD7FF",
+          "properties": {
+            "prefix": "<#ffffff>on</> ",
+            "branch_icon": "",
+            "branch_ahead_icon": "",
+            "branch_behind_icon": "",
+            "branch_gone_icon": "",
+            "branch_identical_icon": "",
+            "commit_icon": "",
+            "tag_icon": "",
+            "merge_icon": "",
+            "rebase_icon": "",
+            "cherry_pick_icon": "",
+            "revert_icon": "",
+            "template": "{{ .HEAD }}{{ if .Staging.Changed }}<#87FF00>  {{ .Staging.String }}</>{{ end }}{{ if .Working.Changed }}<#f92672>  {{ .Working.String }}</>{{ end }}",
+            "fetch_status": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "newline": true,
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "time",
+          "style": "plain",
+          "foreground": "#9d5ea5",
+          "properties": {
+            "prefix": "",
+            "time_format": "15:04:05"
+          }
+        },
+        {
+          "type": "text",
+          "style": "plain",
+          "foreground": "#87FF00",
+          "properties": {
+            "text": "(╯°□°)╯",
+            "prefix": ""
+          }
+        },
+        {
+          "type": "text",
+          "style": "plain",
+          "foreground": "#00bed7",
+          "properties": {
+            "text": "→",
+            "prefix": ""
+          }
+        }
+      ]
+    }
+  ],
+  "final_space": false
+}
